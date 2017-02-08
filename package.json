@@ -1,0 +1,16 @@
+{
+  "name": "jquery-slideshow",
+  "version": "1.0.0",
+  "description": "Simple jquery slideshow library. Lightweight, responsive, easy to implement & configure.",
+  "main": "slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://s_oloughlin@bitbucket.org/s_oloughlin/jquery-slideshow.git"
+  },
+  "author": "Stephen O'Loughlin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/s_oloughlin/jquery-slideshow#readme"
+}

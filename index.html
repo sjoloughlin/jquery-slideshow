@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="slider.css" />
+	</head>
+	<body>
+		<!-- <div class="container"> -->
+			<ul class="slider">
+				<li>
+					<img src="img/slide1.jpg" />
+				</li>
+				<li>
+					<img src="img/slide2.jpg" />
+				</li>
+				<li>
+					<img src="img/slide3.jpg" />
+				</li>
+			</ul>
+		<!-- </div> -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="slider.js"></script>
+		<script>
+		$(window).on("load", function() {
+			$(".slider").slider({
+				// width: "1024px",
+				// height: 'auto'
+				// speed: 500,
+				// delay: 1500
+			});
+		});
+		</script>
+	</body>
+</html>
