@@ -15,12 +15,12 @@ Simple jQuery slideshow library. Lightweight, responsive, easy to implement & co
 Get the latest release from the [releases](https://github.com/sjoloughlin/jquery-slideshow/releases) page and add the files to your project.
 
 Link the stylesheet inside your ```<head>``` tag:
-```htmlmixed
+```html
 <link rel="stylesheet" type="text/css" href="slider.min.css" />
 ```
 Then, before your closing ```<body>``` tag add:
 
-```htmlmixed
+```html
 <script type="text/javascript" src="slider.min.js"></script>
 ```
 
@@ -34,7 +34,7 @@ npm install jquery-slideshow
 
 Add the following HTML for the slider:
 
-```htmlmixed
+```html
 <ul class="slider">
   <li>
     <img src="img/slide1.jpg" alt="slide1"/>
@@ -50,7 +50,7 @@ Add the following HTML for the slider:
 
 Then, before your closing ```<body>``` call ```.slider()``` on the slider element:
 
-```htmlmixed
+```html
 <script type="text/javascript">
   $(window).on("load", function() {
     $(".slider").slider();
@@ -61,7 +61,7 @@ Then, before your closing ```<body>``` call ```.slider()``` on the slider elemen
 ## Configuration
 
 The slider is configurable by passing in a configuration object when calling ```.slider()``` on the slider element:
-```htmlmixed
+```html
 <script type="text/javascript">
   $(window).on("load", function() {
     $(".slider").slider({
@@ -79,12 +79,12 @@ The slider is configurable by passing in a configuration object when calling ```
 | Config | Type | Default |  Description |
 |--------|------|---------|--------------|
 |`speed`|`int`|`1000`|How long the slide animation transition lasts for in milliseconds *e.g. 1000 = 1 second*|
-|`delay`|`int`|`5000`|How long the slide will be displayed for in milliseconds *e.g. 5000 = 5 second*|
+|`delay`|`int`|`3000`|How long the slide will be displayed for in milliseconds *e.g. 5000 = 5 second*|
 |`autoplay`|`boolean`|`true`|Whether to start the slideshow automatically|
 |`navigation`|`boolean`|`true`|Whether to display left/right navigation buttons|
 |`pagination`|`boolean`|`true`|Whether to display clickable slide indicators|
-|`width`|`string`|`1024px`|Width of the slider|
-|`height`|`string`|`500px`|Height of the slider|
+|`width`|`string`|`100%`|Width of the slider|
+|`height`|`string`|`auto`|Height of the slider|
 |`direction`|`string`|`right`|The direction that the slider will slide|
 |`responsive`|`boolean`|`true`|Whether to make the size of the slider responsive|
 
