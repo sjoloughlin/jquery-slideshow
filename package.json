@@ -25,4 +25,8 @@
   ],
   "license": "ISC",
   "homepage": "https://github.com/sjoloughlin/jquery-slideshow#readme"
-}
+}  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-uglify": "^2.0.1"
+  }
