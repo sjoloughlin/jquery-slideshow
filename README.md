@@ -79,7 +79,7 @@ The slider is configurable by passing in a configuration object when calling ```
 | Config | Type | Default |  Description |
 |--------|------|---------|--------------|
 |`speed`|`int`|`1000`|How long the slide animation transition lasts for in milliseconds *e.g. 1000 = 1 second*|
-|`delay`|`int`|`3000`|How long the slide will be displayed for in milliseconds *e.g. 5000 = 5 second*|
+|`delay`|`int`|`3000`|How long the slide will be displayed for in milliseconds *e.g. 3000 = 3 seconds*|
 |`autoplay`|`boolean`|`true`|Whether to start the slideshow automatically|
 |`navigation`|`boolean`|`true`|Whether to display left/right navigation buttons|
 |`pagination`|`boolean`|`true`|Whether to display clickable slide indicators|
@@ -90,4 +90,4 @@ The slider is configurable by passing in a configuration object when calling ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
