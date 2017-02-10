@@ -1,6 +1,6 @@
 {
   "name": "jquery-slideshow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple jquery slideshow library. Lightweight, responsive, easy to implement & configure.",
   "main": "slider.js",
   "repository": {
@@ -23,10 +23,11 @@
       "url": "https://github.com/sjoloughlin"
     }
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/sjoloughlin/jquery-slideshow#readme"
-}  "devDependencies": {
+  "license": "MIT",
+  "homepage": "https://github.com/sjoloughlin/jquery-slideshow#readme",
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-uglify": "^2.0.1"
   }
+}
