@@ -35,15 +35,15 @@ npm install jquery-slideshow
 Add the following HTML for the slider:
 
 ```html
-<ul class="slider">
+<ul class="slider" id="slider">
   <li>
-    <img src="img/slide1.jpg" alt="slide1"/>
+    <img src="images/slide1.jpg" alt="slide1"/>
   </li>
   <li>
-    <img src="img/slide2.jpg" alt="slide2"/>
+    <img src="images/slide2.jpg" alt="slide2"/>
   </li>
   <li>
-    <img src="img/slide3.jpg" alt="slide3"/>
+    <img src="images/slide3.jpg" alt="slide3"/>
   </li>
 </ul>
 ```
@@ -53,7 +53,7 @@ Then, before your closing ```<body>``` call ```.slider()``` on the slider elemen
 ```html
 <script type="text/javascript">
   $(window).on("load", function() {
-    $(".slider").slider();
+    $("#slider").slider();
   });
 </script>
 ```
@@ -64,7 +64,7 @@ The slider is configurable by passing in a configuration object when calling ```
 ```html
 <script type="text/javascript">
   $(window).on("load", function() {
-    $(".slider").slider({
+    $("#slider").slider({
       width  : '1024px', // Width of the slider
       height : '500px',  // Height of the slider
       speed  : 2000,     // How long the slide animation transition lasts for in millisecond
