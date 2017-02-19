@@ -58,7 +58,7 @@
     var _ = this
 
     // create and store slider container
-    _.markup.$slider.wrap("<div id='slider-container'></div>")
+    _.markup.$slider.wrap("<div class='slider-container'></div>")
     _.markup.$slidercontainer = _.markup.$slider.parent()
 
     // duplicate initial slide for smooth transitions
