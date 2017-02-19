@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Slideshow - sjoloughlin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="jQuery Slideshow by sjoloughlin">
+    <meta name="author" content="Stephen O'Loughlin">
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="jQuery Slideshow - sjoloughlin" />
+    <meta property="og:site-name" content="jQuery Slideshow - sjoloughlin" />
+    <meta property="og:url" content="//www.sjoloughlin.com/jquery-slideshow" />
+    <meta property="og:description" content="jQuery Slideshow by sjoloughlin" />
+    <link rel="icon" href="http://www.sjoloughlin.com/favicon/stephen-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../slider.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/prism.css">
+    <!--[if lt IE 9]>
+            script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+    <ul class="slider" id="fullscreen-slider">
+        <li><img src="images/slide1.jpg" alt="slide1"/></li>
+          <li><img src="images/slide2.jpg" alt="slide2"/></li>
+          <li><img src="images/slide3.jpg" alt="slide3"/></li>
+      </ul>
+
+      <div id="main">
+        <div class="wrapper">
+          <h1>jQuery Slideshow</h1>
+          <a href="https://github.com/sjoloughlin/jquery-slideshow">View on GitHub</a>
+          <a id="jquery-slideshow-download" href="">Download ZIP</a>
+          <h2>Simple jQuery slideshow library. Lightweight, responsive, easy to implement & configure.</h2>
+        </div>
+    </div>
+
+    <div id="setup">
+      <div class="wrapper">
+        <h3>Basic Setup</h3>
+        <p>Link the stylesheet inside your head tag</head>
+        <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;slider.min.css&quot; /&gt;</code></pre>
+        <p>Add the following HTML for the slider</p>
+        <pre><code class="language-html">&lt;ul class=&quot;slider&quot; id=&quot;slider&quot;&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;images/slide1.jpg&quot; alt=&quot;slide1&quot;/&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;images/slide2.jpg&quot; alt=&quot;slide2&quot;/&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;images/slide3.jpg&quot; alt=&quot;slide3&quot;/&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <p>Before your closing body tag, link the slider.js file and call .slider() on the slider element</p>
+        <pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;slider.min.js&quot;>&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;</code><code class="language-javascript">
+  $(window).on(&quot;load&quot;, function() {
+    $(&quot;#slider&quot;).slider();
+  });</code>
+<code class="language-html">&lt;/script&gt;</code></pre>
+        <h4>Configuration</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Config</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>speed</td>
+              <td>int</td>
+              <td>1000</td>
+              <td>How long the slide animation transition lasts for in milliseconds e.g. 1000 = 1 second</td>
+            </tr>
+            <tr>
+              <td>delay</td>
+              <td>int</td>
+              <td>3000</td>
+              <td>How long the slide will be displayed for in milliseconds e.g. 3000 = 3 seconds</td>
+            </tr>
+            <tr>
+              <td>autoplay</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td>Whether to start the slideshow automatically</td>
+            </tr>
+            <tr>
+              <td>navigation</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td>Whether to display left/right navigation buttons</td>
+            </tr>
+            <tr>
+              <td>pagination</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td>Whether to display clickable slide indicators</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>string</td>
+              <td>100%</td>
+              <td>Width of the slider</td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>string</td>
+              <td>auto</td>
+              <td>Height of the slider</td>
+            </tr>
+            <tr>
+              <td>direction</td>
+              <td>string</td>
+              <td>right</td>
+              <td>The direction that the slider will slide</td>
+            </tr>
+            <tr>
+              <td>responsive</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td>Whether to make the size of the slider responsive</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Examples</h3>
+        <h4>Demo 1</h4>
+        <ul class="slider" id="demo1">
+            <li><img src="images/slide1.jpg" alt="slide1"/></li>
+              <li><img src="images/slide2.jpg" alt="slide2"/></li>
+              <li><img src="images/slide3.jpg" alt="slide3"/></li>
+          </ul>
+          <pre><code class="language-javascript">$(&quot;#demo1&quot;).slider({
+  speed : 500,
+  delay : 2500
+});</code></pre>
+        <h4>Demo 2</h4>
+        <ul class="slider" id="demo2">
+            <li><img src="images/slide1.jpg" alt="slide1"/></li>
+              <li><img src="images/slide2.jpg" alt="slide2"/></li>
+              <li><img src="images/slide3.jpg" alt="slide3"/></li>
+          </ul>
+          <pre><code class="language-javascript">$(&quot;#demo2&quot;).slider({
+  width : '1280px',
+  speed : 500,
+  autoplay : false,
+  responsive : false
+});</code></pre>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="https://github.com/sjoloughlin/" target="_blank">GitHub</a> | <a href="http://stackoverflow.com/users/1872649/" target="_blank">StackOverflow</a></p>
+      <p>&copy; <?php date_default_timezone_set('UTC');echo date("Y"); ?> Stephen O'Loughlin - Website Developer</p>
+    </footer>
+
+    <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../slider.js"></script>
+    <script type="text/javascript" src="scripts/prism.js"></script>
+    <script type="text/javascript">
+        $(window).on("load", function() {
+          $("#fullscreen-slider").slider();
+          $("#demo1").slider({
+            speed : 500,
+            delay : 2500
+          });
+          $("#demo2").slider({
+            width : '1280px',
+            speed : 500,
+            autoplay : false,
+            responsive : false
+          });
+        });
+
+        $(document).ready(function () {
+            GetLatestReleaseInfo();
+        });  
+
+        function GetLatestReleaseInfo() {
+           $.getJSON("https://api.github.com/repos/sjoloughlin/jquery-slideshow/tags").done(function (json) {
+                var release = json[0];
+                var downloadURL = release.zipball_url;
+                $("#jquery-slideshow-download").attr("href", downloadURL);  
+           });    
+        }
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  </body>
+</html>
