@@ -9,7 +9,7 @@ gulp.task('css', function () {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('.'))
 })
- 
+
 gulp.task('js', function () {
   gulp.src('slider.js')
     .pipe(uglify())
@@ -23,5 +23,5 @@ gulp.task('watch', function () {
 })
 
 gulp.task('default', function () {
-  gulp.start('watch')
+  gulp.start('watch')
 })
