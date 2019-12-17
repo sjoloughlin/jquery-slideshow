@@ -83,6 +83,7 @@ The slider is configurable by passing in a configuration object when calling ```
 |`autoplay`|`boolean`|`true`|Whether to start the slideshow automatically|
 |`navigation`|`boolean`|`true`|Whether to display left/right navigation buttons|
 |`pagination`|`boolean`|`true`|Whether to display clickable slide indicators|
+|`paginationType`|`string`|`dots`|Pagination type to use. Options: 'dots', 'thumbnails'|
 |`width`|`string`|`100%`|Width of the slider|
 |`height`|`string`|`auto`|Height of the slider|
 |`direction`|`string`|`right`|The direction that the slider will slide|

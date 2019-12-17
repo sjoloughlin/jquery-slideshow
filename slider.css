@@ -58,7 +58,8 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.dot {
+.dot,
+.thumbnail {
   background: #FFF;
   width: 15px;
   height: 15px;
@@ -66,7 +67,8 @@ html, body {
   display: inline-block;
   cursor: pointer;	
 }
-.dot:not(:last-of-type) {
+.dot:not(:last-of-type),
+.thumbnail:not(:last-of-type) {
   margin-right: 8px;
 }
 .dot:hover {
@@ -75,4 +77,23 @@ html, body {
 .dot.active {
   background: #333;
   cursor: initial;
+}
+.thumbnail {
+  background: none;
+  width: 10%;
+  height: 10%;
+  border-radius: 0;
+  padding: 0;
+}
+.thumbnail img:hover {
+  border: 1px solid #D9D9D9;
+}
+.thumbnail.active img {
+  border: 1px solid #333;
+  cursor: initial;
+}
+.thumbnail img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }

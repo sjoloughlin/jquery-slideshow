@@ -102,6 +102,12 @@
               <td>Whether to display clickable slide indicators</td>
             </tr>
             <tr>
+              <td>paginationType</td>
+              <td>string</td>
+              <td>dots</td>
+              <td>Pagination type to use. Options: 'dots', 'thumbnails'</td>
+            </tr>
+            <tr>
               <td>width</td>
               <td>string</td>
               <td>100%</td>
@@ -150,6 +156,17 @@
   autoplay : false,
   responsive : false
 });</code></pre>
+        <h4>Demo 3</h4>
+        <ul class="slider" id="demo3">
+            <li><img src="images/slide1.jpg" alt="slide1"/></li>
+              <li><img src="images/slide2.jpg" alt="slide2"/></li>
+              <li><img src="images/slide3.jpg" alt="slide3"/></li>
+          </ul>
+          <pre><code class="language-javascript">$(&quot;#demo3&quot;).slider({
+  speed : 500,
+  delay : 2500,
+  paginationType : 'thumbnails'
+});</code></pre>
       </div>
     </div>
 
@@ -175,7 +192,11 @@
             responsive : false
           });
         });
-
+        $("#demo3").slider({
+          speed : 500,
+          delay: 2500,
+          paginationType : 'thumbnails'
+        });
         $(document).ready(function () {
             GetLatestReleaseInfo();
         });  
